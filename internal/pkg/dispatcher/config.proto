@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package goasyncfunc.server.trojan.dispatcher;
+option csharp_namespace = "goasyncfunc.server.trojan.dispatcher";
+option go_package = "github.com/GoAsyncFunc/server-trojan/internal/pkg/dispatcher";
+option java_package = "com.goasyncfunc.server.trojan.dispatcher";
+option java_multiple_files = true;
+
+message SessionConfig {
+  reserved 1;
+}
+
+message Config {
+  SessionConfig settings = 1;
+}
