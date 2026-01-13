@@ -35,7 +35,7 @@ func InboundBuilder(config *Config, nodeInfo *api.NodeInfo) (*core.InboundHandle
 	inboundDetourConfig.SniffingConfig = sniffingConfig
 
 	// Protocol
-	inboundDetourConfig.Protocol = "trojan"
+	inboundDetourConfig.Protocol = api.Trojan
 
 	// Settings
 	type TrojanSettings struct {

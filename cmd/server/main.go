@@ -132,15 +132,6 @@ func main() {
 				Required:    false,
 				Destination: &dataDir,
 			},
-			&cli.StringFlag{
-				Name:        "node_type",
-				Usage:       "Node type",
-				EnvVars:     []string{"NODE_TYPE"},
-				Value:       "trojan",
-				DefaultText: "trojan",
-				Required:    false,
-				Destination: &apiConfig.NodeType,
-			},
 		},
 		Before: func(c *cli.Context) error {
 			log.SetFormatter(&log.TextFormatter{})
@@ -171,6 +162,8 @@ func main() {
 					return fmt.Errorf("failed to read file binary stream: %w", err)
 				}
 			}
+
+			apiConfig.NodeType = api.Trojan
 
 			serv, err := server.New(&config, &apiConfig, &serviceConfig, extFileBytes, dataDir)
 			if err != nil {
