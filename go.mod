@@ -3,15 +3,16 @@ module github.com/GoAsyncFunc/server-trojan
 go 1.25.5
 
 require (
-	github.com/GoAsyncFunc/uniproxy v0.0.5
+	github.com/GoAsyncFunc/uniproxy v0.0.6
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.7
-	github.com/xtls/xray-core v1.251208.0
+	github.com/xtls/xray-core v1.260113.0
 	google.golang.org/protobuf v1.36.11
 )
 
 require (
 	github.com/andybalholm/brotli v1.2.0 // indirect
+	github.com/apernet/quic-go v0.57.2-0.20260111184307-eec823306178 // indirect
 	github.com/cloudflare/circl v1.6.2 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/dgryski/go-metro v0.0.0-20250106013310-edb8663e5e33 // indirect
@@ -24,8 +25,7 @@ require (
 	github.com/miekg/dns v1.1.70 // indirect
 	github.com/pires/go-proxyproto v0.8.1 // indirect
 	github.com/quic-go/qpack v0.6.0 // indirect
-	github.com/quic-go/quic-go v0.58.0 // indirect
-	github.com/refraction-networking/utls v1.8.1 // indirect
+	github.com/refraction-networking/utls v1.8.2 // indirect
 	github.com/riobard/go-bloom v0.0.0-20200614022211-cdc8013cb5b3 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sagernet/sing v0.7.14 // indirect
@@ -38,6 +38,7 @@ require (
 	github.com/xtls/reality v0.0.0-20251116175510-cd53f7d50237 // indirect
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
 	golang.org/x/crypto v0.47.0 // indirect
+	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
 	golang.org/x/mod v0.31.0 // indirect
 	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
@@ -53,4 +54,4 @@ require (
 	lukechampine.com/blake3 v1.4.1 // indirect
 )
 
-replace github.com/xtls/xray-core => github.com/GoAsyncFunc/xray-core v0.0.0-20260113095542-8a9dbd407f5c
+replace github.com/xtls/xray-core => github.com/GoAsyncFunc/xray-core v0.0.0-20260114133143-a384be0f8440
